@@ -1,0 +1,16 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.pimpa.pimpagolive'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+    }
+}
+
+dependencies {
+    implementation 'com.github.pedroSG94:rtmp-rtsp-stream-client-java:2.3.3'
+}
