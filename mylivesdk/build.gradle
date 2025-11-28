@@ -1,13 +1,11 @@
-plugins {
-    id 'com.android.library'
-}
+apply plugin: 'com.android.library'
 
 android {
-    namespace 'com.pimpa.pimpagolive'
-    compileSdk 35
+    compileSdkVersion 35
 
     defaultConfig {
-        minSdk 21
+        minSdkVersion 21
+        targetSdkVersion 35
     }
 
     sourceSets {
