@@ -6,14 +6,21 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 35
+        versionCode 1
+        versionName "1.0.2"
     }
 
-    sourceSets {
-        main.java.srcDirs += 'src/main/java'
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
     }
 }
 
 dependencies {
     implementation 'com.github.pedroSG94:rtmp-rtsp-stream-client-java:2.3.3'
+    // Add other dependencies here if needed
 }
+
 
