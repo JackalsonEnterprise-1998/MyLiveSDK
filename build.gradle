@@ -1,20 +1,19 @@
+// Root-level build.gradle
 buildscript {
     repositories {
         google()
-        jcenter()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
+        maven { url 'https://jitpack.io' }  // Needed for GitHub-hosted dependencies
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.3'
+        classpath 'com.android.tools.build:gradle:7.5.1' // Android Gradle plugin
     }
 }
 
 allprojects {
     repositories {
         google()
-        jcenter()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
+        maven { url 'https://jitpack.io' } // Needed for GitHub-hosted dependencies
     }
 }
