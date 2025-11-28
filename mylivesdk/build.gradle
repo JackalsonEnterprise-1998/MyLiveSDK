@@ -4,13 +4,18 @@ plugins {
 
 android {
     namespace 'com.pimpa.pimpagolive'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         minSdk 21
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/java'
     }
 }
 
 dependencies {
     implementation 'com.github.pedroSG94:rtmp-rtsp-stream-client-java:2.3.3'
 }
+
